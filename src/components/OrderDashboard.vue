@@ -253,23 +253,23 @@
                     {
                         label: "Data/time out",
                         name: "date_time_out",
-                        filter: {
-                            type: "FilterOrder"
-                        }
+                        // filter: {
+                        //     type: "FilterOrder"
+                        // }
                     },
                     {
                         label: "Name",
                         name: "name",
-                        filter: {
-                            type: "FilterOrder"
-                        }
+                        // filter: {
+                        //     type: "FilterOrder"
+                        // }
                     },
                     {
                         label: "Company",
                         name: "company",
-                        filter: {
-                            type: "FilterOrder"
-                        }
+                        // filter: {
+                        //     type: "FilterOrder"
+                        // }
                     },
                     {
                         label: "",
@@ -344,12 +344,12 @@
                     rows_selectable: false,
                     pagination_info: false,
                     card_title: "Order Dashboard",
-                    per_page_options:  [10,  25,  50,  100],
+                    per_page_options:  [10,  20,  50,  100],
                     per_page: 25,
                     page_current: 1,
-                    url: 'http://botak-signgit.loc/',
-                    consumerKey: 'ck_a424a2c5e6c6f97551d8f2b0518c87621b6cf807',
-                    consumerSecret: 'cs_f7c9dc7325e89a30d42f0e115ffa8dca6efb3480',
+                    url: 'https://botaksign.com/',
+                    consumerKey: 'ck_06b92636a8d2d2bf1f0328d624b18b1c3a6b9638',
+                    consumerSecret: 'cs_25e85f8fe5adad59c529a801242b9a427aa4d512',
                 },
                 classes: {
                     tableWrapper: "outer-table-div-class wrapper-class-two",
