@@ -345,7 +345,7 @@
                     pagination_info: false,
                     card_title: "Order Dashboard",
                     per_page_options:  [10,  20,  50,  100],
-                    per_page: 25,
+                    per_page: 20,
                     page_current: 1,
                     url: 'https://botaksign.com/',
                     consumerKey: 'ck_06b92636a8d2d2bf1f0328d624b18b1c3a6b9638',
