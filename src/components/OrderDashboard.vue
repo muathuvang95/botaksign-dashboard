@@ -344,7 +344,7 @@
                     rows_selectable: false,
                     pagination_info: false,
                     card_title: "Order Dashboard",
-                    per_page_options:  [10,  20,  50,  100],
+                    per_page_options:  [20],
                     per_page: 20,
                     page_current: 1,
                     url: 'https://botaksign.com/',
