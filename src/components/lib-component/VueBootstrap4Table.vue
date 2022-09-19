@@ -60,7 +60,7 @@
                                     </div> -->
                                     <!-- refresh & reset button ends here -->
                                     <!-- Refresh Board by seconds -->
-                                    <!-- <RefreshBoard :config="config" :showLoader="showLoader" :searchSpecialistValue="searchSpecialistValue"></RefreshBoard> -->
+                                    <RefreshBoard :config="config" :showLoader="showLoader" :searchSpecialistValue="searchSpecialistValue"></RefreshBoard>
                                     <!-- action buttons starts here -->
                                     <!-- <div class="col-md-8">
                                         <slot name="vbt-action-buttons">
