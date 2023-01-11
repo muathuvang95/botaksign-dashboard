@@ -23,6 +23,7 @@ import Pagination from "vue-bootstrap4-table"
 import FilterOrder from "vue-bootstrap4-table"
 import MultiSelect from "vue-bootstrap4-table"
 import VueColumnsResizable from 'vue-columns-resizable'
+import VueToastify from "vue-toastify";
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -36,6 +37,7 @@ Vue.use(Pagination)
 Vue.use(FilterOrder)
 Vue.use(MultiSelect)
 Vue.use(VueColumnsResizable);
+Vue.use(VueToastify);
 // Vue.use(jQuery)
 
 Vue.config.productionTip = false

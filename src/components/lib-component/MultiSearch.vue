@@ -136,6 +136,7 @@ export default {
                             order_on_hold: value.order_on_hold,
                             date_time_out: value.order_time_out,
                             name: value.full_name,
+                            user_link: value.user_link,
                             company: value.shipping.company,
                             payment_title: value.payment_method_title,
                             payment: value.payment_method,

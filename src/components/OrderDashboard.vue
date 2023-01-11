@@ -49,7 +49,7 @@
                 </div>
             </template>
 
-            <template slot="date_time_out"slot-scope="props">
+            <template slot="date_time_out" slot-scope="props">
                 <div v-if="props.row.date_time_out" class="date-time-out">
                         <div>
                             <svg v-if="props.row.status == 'Cancelled'" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +87,9 @@
             </template>
             <template slot="delivery_method" slot-scope="props">
                 <div class="child-td">{{props.row.delivery_method}}</div>
+            </template>
+            <template slot="name" slot-scope="props">
+                <div class="child-td"><a v-bind:href="props.row.user_link" target="_blank" class="btn btn-link">{{props.row.name}}</a></div>
             </template>
             <template slot="delivery_address" slot-scope="props">
                 <div class="child-td">{{props.row.delivery_address}}</div>
@@ -253,23 +256,23 @@
                     {
                         label: "Data/time out",
                         name: "date_time_out",
-                        // filter: {
-                        //     type: "FilterOrder"
-                        // }
+                        filter: {
+                            type: "FilterOrder"
+                        }
                     },
                     {
                         label: "Name",
                         name: "name",
-                        // filter: {
-                        //     type: "FilterOrder"
-                        // }
+                        filter: {
+                            type: "FilterOrder"
+                        }
                     },
                     {
                         label: "Company",
                         name: "company",
-                        // filter: {
-                        //     type: "FilterOrder"
-                        // }
+                        filter: {
+                            type: "FilterOrder"
+                        }
                     },
                     {
                         label: "",
@@ -441,6 +444,7 @@
                                 order_on_hold: value.order_on_hold,
                                 date_time_out: value.order_time_out, 
                                 name: value.full_name,
+                                user_link: value.user_link,
                                 company: value.shipping.company,
                                 payment_title: value.payment_method_title,
                                 payment: value.payment_method,
@@ -587,6 +591,8 @@
                             expiring: value.expiring,
                             item_on_hold: value.item_on_hold,
                             user_can: value.user_can,
+                            nbu: value.nbu,
+                            nbd: value.nbd,
                             // user_can: 'edit',
                         }
                         list_status = value.list_status;
